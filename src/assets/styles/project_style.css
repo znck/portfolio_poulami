@@ -1,0 +1,56 @@
+h2+p{
+	margin-top:1vh;
+}
+
+section>img{
+	width: 100%;
+	height: auto;
+	max-width:100%;
+	margin-top:2.5vh;
+}
+
+.intro_visual{
+	width: 100%;
+	
+}
+
+.vid-container{
+	
+	position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+iframe{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.project_body{
+	margin-bottom: 16vh;
+}
+
+.flex_row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.flex_row>figure{
+	max-width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size:90%;
+}
+
+.next{
+	margin-bottom: 4%;
+}
+.next_project{
+	font-size: 160%;
+}
