@@ -2,10 +2,13 @@ const fs = require('fs')
 const path = require('path')
 
 module.exports = {
+  lintOnSave: false,
+
   /** @param {import('webpack-chain')} config */
   chainWebpack(config) {
     config.module.rule('images').exclude.add(/encrypted/)
     config.module.rule('media').exclude.add(/encrypted/)
+    config.resolve.alias.set('@design', 'src/assets/styles/project_style.css')
 
     config.module
       .rule('inlined-images')
@@ -47,6 +50,6 @@ module.exports = {
         },
       ])
 
-      if (process.env.NODE_ENV === 'production') config.devtool(false)
+    if (process.env.NODE_ENV === 'production') config.devtool(false)
   },
 }
