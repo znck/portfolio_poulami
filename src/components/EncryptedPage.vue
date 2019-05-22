@@ -36,7 +36,7 @@ export default {
       const fns = this.promises || []
       this.promises = []
       this.ready = true
-      this.error = null
+      this.error = 'null'
 
       sessionStorage.setItem('password', this.password)
 
@@ -47,12 +47,12 @@ export default {
 </script>
 
 <template>
-  <div v-if="!ready">
+  <div class="loading" v-if="!ready">
     <form @submit.prevent="submit">
-      <input type="password" v-model="password" />
-      <button type="submit">open</button>
-      <p v-if="error">{{ error }}</p>
+      <input type="password" placeholder ="Password" v-model="password" />
+      <button type="submit">Submit</button>
     </form>
+    <p v-if="error">{{ error }}</p>
   </div>
   <div v-else-if="loading">
     Loading...

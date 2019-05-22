@@ -4,30 +4,27 @@
       <div class="description">
         <section class="intro_title">
           <h1>Poulami Chakraborty</h1>
+          <h1 class="soft">UX Designer</h1>
         </section>
         <section class="intro_text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+            I love solving problems, and I am fascinated by human psychology. Human computer interaction is a domain which lets me indulge these interests and sculpt how people end up experiencing new technology.</p>
           <p>
-            Currently working as a <span class="bold">{{ jobTitle }}</span> at
+            Currently I am working as <span class="bold">{{ jobTitle }}</span> at
             <a
               href="https://www.samsung.com/in/aboutsamsung/home/"
               class="linking"
               target="_blank"
             >
               {{ company }}</a
-            >. I got initiated into design and earned my Bachelor's degree in
-            Design at
+            >, wherein I am trying to make myself and machines understand principles of human-human conversation. My previous works include designing user experiences for non-digital, screen-based and tangible interfaces.</p>
+            <p> I got initiated into design and earned my Bachelor's degree in Design at
             <a
               href="https://www.iitg.ac.in/design/"
               class="linking"
               target="_blank"
               >Indian Institute of Technology, Guwahati.</a
-            >
+            >.
           </p>
           <br />
           <p class="links">
@@ -65,7 +62,7 @@ export default {
   data() {
     return {
       jobTitle: 'Voice UX Designer',
-      company: 'Samsung Research Institute, Bengaluru',
+      company: 'Samsung Research Institute Bengaluru',
       projects: [
         {
           title: 'Creating a Voice Assistant platform',
@@ -115,8 +112,5 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  font-size: 250%;
-}
 @import '../assets/styles/style.css';
 </style>

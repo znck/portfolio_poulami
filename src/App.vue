@@ -95,7 +95,7 @@ section {
 
 .description {
   background-color: var(--dark-color);
-  padding: 8vh 0 16vh 0;
+  padding: 6vh 0 8vh 0;
 }
 
 footer {
@@ -110,6 +110,41 @@ footer > p {
   margin-top: 0;
 }
 
+.loading{
+  height: 98vh;
+  background-color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loading>form{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+ }
+input, input:focus {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border: 1px solid var(--dark-color);
+  padding: 0.5% 0.5%;
+  opacity: 0.6;
+  width: 80%;
+  font-size: 100%;
+}
+input:focus{
+  outline: none;
+}
+button{
+  border: none;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 1% 3%;
+  margin-left: 0.5%;
+  width: 18%;
+}
 @media only screen and (min-width: 768px) {
   section {
     width: 72%;
